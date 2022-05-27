@@ -34,7 +34,7 @@
                 </nav>
             </div>
         </header>
-        <main class="page">
+        <main class="page" id="mainPage">
             <div class="page__main-block main-block">
                     <div class="main-block__container _container">
                         <div class="main-block__body">
@@ -63,7 +63,7 @@
                     </div>
                     </div>
             </div>
-            <section class="page__aboutUs aboutUs">
+            <section class="page__aboutUs aboutUs" data-sections="value">
                 <div class="aboutUs__container _container">
                     <div class="aboutUs__header header-block">
                         <h3 class="header-block__suptitle">What we do</h3>
@@ -222,27 +222,38 @@
                         <div class="What-we-do__main-block_items main-block_img _ibg">
                             <img src="/img/Man.jpg" alt="Man">
                         </div>
-                        <div class="What-we-do__main-block_items main-block_txt">
+                        <div class="What-we-do__main-block_items _init" data-spollers data-one-spoller>
                             <div class="main-block__items">
-                                <img src="/img/IMAGE.png" alt="picture">
-                                <h2 class="Services__title">
-                                    Photography
-                                </h2>
-                            </div>
-                            <h3 class="txt">
+                                <button class="main-block__button"  tabindex="-1" type="button" data-spoller main-block_title>
+                                    <img src="/img/IMAGE.png" alt="picture">
+                                    <h2 class="Services__title">
+                                        Photography
+                                    </h2>
+                                </button>
+                                <h3 class="txt">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </h3>
-                            <div class="main-block__items">
-                                <img src="/img/EQUALIZER.png" alt="EQUALIZER">
-                                <h2 class="Services__title">
-                                    Creativity
-                                </h2>
+                                </h3>
                             </div>
                             <div class="main-block__items">
-                                <img src="/img/BULLSEYE.png" alt="BULLSEYE">
-                                <h2 class="Services__title">
-                                    Web Design
-                                </h2>
+                                <button class="main-block__button"  tabindex="-1" type="button" data-spoller main-block_title>
+                                    <img src="/img/EQUALIZER.png" alt="EQUALIZER">
+                                    <h2 class="Services__title">
+                                        Creativity
+                                    </h2>
+                                </button>
+                                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde illo minus, eum voluptatibus dolore ab laudantium error odit nobis nisi consectetur a. Vero aliquid dolorum quasi mollitia ratione sunt pariatur!
+                                </h3>
+                            </div>
+                            <div class="main-block__items">
+                                <button class="main-block__button"  tabindex="-1" type="button" data-spoller main-block_title>
+                                    <img src="/img/BULLSEYE.png" alt="BULLSEYE">
+                                    <h2 class="Services__title">
+                                        Web Design
+                                    </h2>
+                                </button>
+                                <h3>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut incidunt accusantium libero tempore ad labore, laborum illum consequuntur ex beatae temporibus hic eligendi autem reiciendis provident animi! Voluptatem, nihil perspiciatis.
+                                </h3>
                             </div>
                         </div>
                     </div>                 
@@ -252,7 +263,6 @@
             Я подвал
         </footer>
     </div>
-    <div></div>
     <script src="/js/script.js"></script>
 </body>
 </html>

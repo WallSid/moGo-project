@@ -1,78 +1,74 @@
-// Получаем объект body
+'use strict'
+// spollers
+const spollersArray  = document.querySelectorAll('[data-spollers]');
+if(spollersArray.length > 0) {
+    const spollersRegular = Array.from(spollersArray).filter(function(item, index, self) {
+        return !item.dataset.spollers.split(",")[0];
+    });
+    // init regular spoller
+    if(spollersRegular > 0) {
+            initSpollers(spollersRegular);
+        }
 
-const bodyElement = document.body;
+        // getting media spoller
+        const spollersMedia = Array.from(spollersArray).filter(function(item, index, self) {
+            return item.dataset.spollers.split(",")[0];
+        });
+        // init spollers with media request
+        if (spollersMedia.length > 0) {
+            const breakePointsArray = [];
+            spollersMedia.forEach(item => {
+                const params = item.dataset.spollers;
+                const breakePoint = {};
+                const paramsArray = params.split(",");
+                breakePoint.value = paramsArray[0];
+                breakePoint.type = paramsArray[1] ? paramsArray[1].trim() : "max";
+                breakePoint.item = item;
+                breakePointsArray.push(breakePoint);
+                console.log(breakePointsArray)
+        });
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // getting unique breakepoints
+        let mediaQueries = breakePointsArray.map(function (item) {
+            return '(' + item.type + '-width: ' + item.value + 'px),' + ',' + item.type;
+        });
+        mediaQueries = mediaQueries.filter(function (item, index, self) {
+            return self.indexOf(item) === index;
+        });
 
-// Перебор коллекции с помощью for...of
+        // works with every breakepoints...
+        mediaQueries.forEach(breakepoint => {
+            const paramsArray = breakepoint.split(",");
+            const mediaBreakepoint = paramsArray[1];
+            const mediaType = paramsArray[1];
+            const matchMedia = window.matchMedia(paramsArray[0]); 
 
-// for(let node of bodyChildren) {
-//     console.log(node);
-// }
+            //object with required condition
+            const spollersArray = breakePointsArray.filter(function (item) {
+                if (item.value === mediaBreakePoint && item.type === mediaType) {
+                    return true;
+                }
+            });
+            // Ocasion(событие)
+            matchMedia.addListener(function () {
+                initSpollers(spollersArray, matchMedia);
+            });
+            initSpollers(spollersArray, matchMedia);
+        });
+    }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Получение соседнего(previousSibling), родительского(parentNode) и следующего(nextSibling) узла
-
-const previusSiblingNode = bodyElement.previousSibling;
-const nextSiblingNode = bodyElement.nextSibling;
-const parentNode = bodyElement.parentNode;
-
-// console.log(previusSiblingNode);
-// console.log(nextSiblingNode);
-// console.log(parentNode);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Получаем коллекцию всех дочерних элементов (children(только элементы, только HTML-тэги)) 
-
-const bodyChildrenNodes = bodyElement.childNodes;
-// console.log(bodyChildrenNodes);
-
-// и коллекцию всех дочерних узлов(childNodes(с .text и т.д.)).
-
-const bodyElementChildrens = bodyElement.children;
-// console.log(bodyElement.children);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Первый(firstElementChild) и последний(lastElementChild) элемент объекта
-
-const firstChild = bodyElement.firstElementChild;
-const lastChild = bodyElement.lastElementChild;
-// console.log(firstChild);
-// console.log(lastChild);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Сосние и родительский элементы
-
-const previousSibling = bodyElement.previousElementSibling;
-const nextSibling = bodyElement.nextElementSibling;
-const parentElement = bodyElement.parentElement;
-// console.log(previousSibling);
-// console.log(nextSibling);
-// console.log(parentElement);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Получение произвольных элементов дерева DOM
-
-// Самый универсальный методо поиска - elem.querySelectorAll(CSS);
-// Можно использовать любой CSS селектор.
-
-// selector Class
-const elemsOne = document.querySelectorAll('.Services__list-block');
-// console.log(elemsOne);
-
-// selector Tag
-const elemsTwo = document.querySelectorAll('section');
-// console.log(elemsTwo);
-
-// mixed Tag and Class selector
-const elemsThree = document.querySelectorAll('h2.Services__title');
-console.log(elemsThree);
-
-// 1st nesting level selector
-const elemsFour = document.querySelectorAll('.Services__list-block>div');
-// console.log(elemsFour);
+    // initializing
+    function initSpollers(spollersArray, matchMedia = false) {
+        spollersArray.forEach(spollersBlock => {
+            if (matchMedia.matches || !matchMedia) {
+                spollersBlock.classList.add("_init");
+                initSpollerBody(spollersBlock);
+                spollersBlock.addEventListener("click", setSpollerActiion);
+            }   else {
+                spollersBlock.classList.remove('_init');
+                initSpollerBody(spollersBlock, false);
+                spollersBlock.removeEventListener("click", setSpollerActiion);
+            }
+        });
+    }
+}
