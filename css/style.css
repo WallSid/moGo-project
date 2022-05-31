@@ -878,12 +878,11 @@ body {
   top: 0;
   left: 470px;
   background-repeat: no-repeat;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
-.What-we-do__main-block_items._init h3:active {
-  display: none;
+.What-we-do__main-block_items._init .main-block__button._active h2::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /* ____FOOTER_______________________________________________________________________________________________________________________________________ */
