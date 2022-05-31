@@ -829,46 +829,48 @@ body {
 			font-style: italic;
 			font-weight: 300;
 			line-height: 160%;
+			border: 1px solid #e5e5e5;
 		}
 }
 .main-block__button {
 	text-align: left;
 	padding: 15px;
 	border: 1px solid #e5e5e5;
+	position: relative;
 	h2 {
 		display: inline-block;
 		align-items: center;
 		margin: 7.5px 0 7.5px 16px;
 		position: relative;
 	}
-	h2::after {
-		content: "";
-		background-image: url(../img/nav/nav-services-arrow.svg);
-		width: 22px;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 470px;
-		background-repeat: no-repeat;
-		transition: transform 0.2s ease 0s;
-	}
+	// h2::after {
+	// 	content: "";
+	// 	background-image: url(../img/nav/nav-services-arrow.svg);
+	// 	width: 22px;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 470px;
+	// 	background-repeat: no-repeat;
+	// 	transition: transform 0.2s ease 0s;
+	// }
 	img {
 		display: inline-block;
 		min-width: 32px;
 		height: 32px;
 	}
 }
-.What-we-do__main-block_items._init .main-block__button h2::after {
+.main-block__button::after {
 		content: "";
 		background-image: url(../img/nav/nav-services-arrow.svg);
 		width: 22px;
-		height: 100%;
+		height: 20%;
 		position: absolute;
-		top: 0;
-		left: 470px;
+		top: 40%;
+		right: 5%;
 		background-repeat: no-repeat;
 }
-.What-we-do__main-block_items._init .main-block__button._active h2::after {
+.main-block__button._active::after {
 	transform: rotate(180deg);
 }
 
@@ -881,6 +883,7 @@ body {
 /* ____FOOTER_______________________________________________________________________________________________________________________________________ */
 
 .footer {
+	background-color: #fce38a;	
 }
 
 
