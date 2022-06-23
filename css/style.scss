@@ -264,6 +264,7 @@ body {
 	font-size: 30px;
 	font-weight: 700;
 	color: #333;
+	text-transform: uppercase;
 }
 .header-block__title:not(last-child) {
 	margin: 0 0 45px 0;
@@ -702,6 +703,7 @@ body {
 
 }
 .Services__title {
+.cards-text__block h2 {
 	color: #333;
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
@@ -710,6 +712,7 @@ body {
 	margin: 0 0 15px 0;
 }
 .Services__text {
+.cards-text__block p {
 	color: #9f9f9f;
 	font-size: 14px;
 	line-height: 160%;
@@ -768,6 +771,10 @@ body {
 /* ____What-we-do_______________________________________________________________________________________________________________________________________ */
 
 .page__What-we-do {
+<<<<<<< Updated upstream
+=======
+	margin-bottom: 120px;
+>>>>>>> Stashed changes
 }
 .What-we-do__container {
 }
@@ -850,6 +857,283 @@ body {
 	font-weight: 300;
 	line-height: 160%;
 }
+
+
+
+/* ____SLIDER_______________________________________________________________________________________________________________________________________ */
+/* ____SLIDER_______________________________________________________________________________________________________________________________________ */
+
+.swiper {
+	background-color: #f8f8f8;
+}
+.swiper-container {
+	height: 290px;
+	padding: 0 5px;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-slider {
+	display: flex;
+	align-items: center;
+}
+.content-slider {
+	p {
+		font-family: "Kaushan Script", cursive;
+		font-size: 24px;
+		color: #333333;
+		position: relative;
+		margin-left: 70px;
+		margin-top: 10px;
+	}
+	p::before {
+		content: "";
+		position: absolute;
+		top: 14px;
+		left: -70px;
+		width: 60px;
+		height: 3px;
+		background-color: #f38181;
+	}
+}
+.slider-img {
+}
+.slider-text {
+	color: #999999;
+	margin-left: 60px;
+	max-width: 767px;
+	line-height: 36px;
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-style: italic;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	color: #ccc;
+}
+.swiper-button-prev:after {
+}
+.swiper-button-next:after {
+}
+.swiper-button-prev,
+.swiper-button-next {
+	width: 12px;
+	height: 24px;
+}
+.swiper-pagination-bullet-active {
+	background-color: #e0c52c;
+}
+
+/* ____SLIDER_______________________________________________________________________________________________________________________________________ */
+/* ____SLIDER_______________________________________________________________________________________________________________________________________ */
+
+
+/* ____MEET-OUR-TEAM_______________________________________________________________________________________________________________________________________ */
+.meet-our-team__body {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	// position: relative;
+	// z-index: 5;
+	overflow: hidden;
+	// width: 1220px;
+	// min-height: 800px;
+}
+
+.meet-our-team__img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	// position: relative;
+	// z-index: 10;
+	width: 1200px;
+	margin: 10px 0 100px 0;
+		// div {
+		// 	flex: 0 1 33.3%;
+		// }
+		img {
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: cover;
+		}
+}
+
+@media (max-width: 1230px) {
+	.meet-our-team {
+		justify-content: center;
+		
+		div {
+			flex: 0 1 100%;
+			align-self: center;
+			max-width: 390px;
+			max-height: 260px;
+			margin: 10px;
+			div {
+				
+			}
+		}
+	}
+}
+.meet-our-team_item1 {
+	position: relative;
+	margin: 0 0 0 10px;
+}
+
+@media (max-width: 1229px) {
+	.meet-our-team_item1 {
+		margin: 0;
+	}
+}
+@media (max-width: 1229px) {
+	.meet-our-team_item1-BG {
+		display: none;
+	}
+}
+.meet-our-team_item1_1 {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	z-index: 20;
+}
+
+.meet-our-team_item2 {
+	margin: 0 0px;
+}
+.meet-our-team_item3 {
+}
+
+.meet-our-team_txt__block.cards-text__block {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* ____MEET-OUR-TEAM_______________________________________________________________________________________________________________________________________ */
+
+
+/* ____BRANDS-BLOCK_______________________________________________________________________________________________________________________________________ */
+
+.brands__body {
+}
+
+.brands__block {
+	background-color: #f8f8f8;
+	width: 100%;
+	height: 100%;
+}
+.brands__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.brands_img__block {
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	// vertical-align: center;
+}
+
+.brands-img__item {
+	max-width: 100%;
+	max-height: 100%;
+	padding: 51.5px 0;
+	background-color: #f8f8f8;
+}
+
+/* ____BRANDS-BLOCK_______________________________________________________________________________________________________________________________________ */
+
+
+
+/* ____Gallery_______________________________________________________________________________________________________________________________________ */
+
+.our-works-gallery {
+	// display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+	overflow: hidden;
+	// flex-wrap: wrap;
+	position: relative;
+	// justify-content: center;
+
+	
+}
+
+.our-works-gallery_item {
+	display: inline-block;
+	overflow: hidden;
+	height: 390px;
+	// flex: 24%;
+	z-index: 5;
+	// position: relative;
+}
+
+.our-works-gallery__block {
+	position: relative;
+}
+
+.our-works-gallery_item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 20;
+}
+
+.gallery-item-hover {
+	display: none;
+}
+
+.our-works-gallery-3rd-flex__block {
+	grid-column: span 1;
+	grid-row: span 2;
+}
+// .our-works-gallery:only-child {
+// 	display: inline-block;
+// 	max-height: 390px;
+// }
+// .gelly {
+// 	max-height: 390px;
+// 	min-width: 480px;
+// }
+
+
+// .our-works-gallery-1st-flex__block {
+// 	max-height: 390px;
+// }
+// .our-works-gallery-2nd-flex__block {
+// 	max-height: 390px;
+// }
+// .our-works-gallery-3rd-flex__block {
+// 	height: 390px;
+// }
+// .our-works-gallery-4th-flex__block {
+// 	max-height: 390px;
+// }
+// .our-works-gallery-5th-flex__block {
+// 	max-height: 390px;
+// }
+// .our-works-gallery-6th-flex__block {
+// 	max-height: 390px;
+// }
+// .our-works-gallery-7th-flex__block {
+// 	max-height: 390px;
+// }
+
+/* ____Gallery_______________________________________________________________________________________________________________________________________ */
+
+
 
 
 /* ____FOOTER_______________________________________________________________________________________________________________________________________ */
