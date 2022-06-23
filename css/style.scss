@@ -178,8 +178,6 @@ body {
 	flex-wrap: wrap;
 }
 
-.menu__item {
-}
 
 .menu__item:not(:last-child) {
 	margin: 0 58px 0 0px;
@@ -297,9 +295,7 @@ body {
 	position: relative;
 	z-index: 1;
 }
-.main-block__container {
-	
-}
+
 .main-block__body {
 	padding: 230px 0 0 0;
 	position: relative;
@@ -404,9 +400,6 @@ body {
 			text-transform: uppercase;
 			font-size: 12px;
 		}
-		div {
-
-		}
 }
 
 .main-block__slider_element {
@@ -454,10 +447,6 @@ body {
 /* ____AboutUs_______________________________________________________________________________________________________________________________________ */
 
 
-.aboutUs {
-	// position: relative;
-	// z-index: 0;
-}
 .aboutUs__container {
 	align-items: center;
 	max-width: 1200px;
@@ -481,8 +470,6 @@ body {
 
 }
 /* ____AboutUs__IMG_______________________________________________________________________________________________________________________________________ */
-.aboutUs__images {
-}
 
 .aboutUs__img {
 	display: flex;
@@ -515,9 +502,6 @@ body {
 			max-width: 390px;
 			max-height: 260px;
 			margin: 10px;
-			div {
-				
-			}
 		}
 	}
 }
@@ -559,9 +543,6 @@ body {
 
 .aboutUs__img_item2 {
 	margin: 0 0px;
-}
-.aboutUs__img_item3 {
-	
 }
 
 
@@ -620,8 +601,6 @@ body {
 	}
 }
 
-.aboutUs__value {
-}
 .aboutUs__text {
 	justify-content: center;
 }
@@ -630,8 +609,7 @@ body {
 	background: #95e1d3;
 	box-sizing: border-box;
 }
-.aboutUs__bg-image {
-}
+
 .aboutUs__value {
 	font-size: 72px;
 	color: #fff;
@@ -649,27 +627,18 @@ body {
 	// position: relative;   - для БГ
 	background-color: inherit;
 }
-.Services {
 
-}
 .Services__container {
 	padding-bottom: 70px;
 }
 .Services__header {
 	padding-bottom: 0;
 }
-.header-block__suptitle {
-}
-.header-block__title {
-}
 
 .Services__list-block {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-		div {
-			// flex: 0 1 33.3%;
-		}
 }
 @media (min-width: 768px) {
 	.Services__list-block:not(:last-of-type) {
@@ -731,15 +700,7 @@ body {
 	z-index: -1;
 	object-fit: cover;
 }
-.Unique-Design__container {
-}
-.Unique-Design__header {
-}
-.Unique-Design__images {
-	// display: flex;
-	// justify-content: center;
-	// flex-wrap: nowrap;
-}
+
 .Unique-Design__images_items {
 	max-width: 100%;
 	max-height: 100%;
@@ -771,15 +732,12 @@ body {
 .page__What-we-do {
 	margin-bottom: 120px;
 }
-.What-we-do__container {
-}
-.What-we-do__header {
-} 
+
+
 .main-block_img {
 	margin: 0 10px 0 0;
 }
-.main-block_img img{
-}
+
 .What-we-do__main-block {
 	display: flex;
 		// div {
@@ -833,8 +791,7 @@ body {
 	}
 }
 
-.main-block_txt {
-}
+
 
 @media (max-width: 767px) {
 	.main-block_txt {
@@ -842,8 +799,7 @@ body {
 	}
 }
 
-.Services__title {
-}
+
 .txt {
 	padding: 20px;
 	color: #a6a6a6;
@@ -865,8 +821,7 @@ body {
 	height: 290px;
 	padding: 0 5px;
 }
-.swiper-wrapper {
-}
+
 .swiper-slide {
 	display: flex;
 	justify-content: center;
@@ -895,8 +850,7 @@ body {
 		background-color: #f38181;
 	}
 }
-.slider-img {
-}
+
 .slider-text {
 	color: #999999;
 	margin-left: 60px;
@@ -910,10 +864,8 @@ body {
 .swiper-button-next:after {
 	color: #ccc;
 }
-.swiper-button-prev:after {
-}
-.swiper-button-next:after {
-}
+
+
 .swiper-button-prev,
 .swiper-button-next {
 	width: 12px;
@@ -970,9 +922,6 @@ body {
 			max-width: 390px;
 			max-height: 260px;
 			margin: 10px;
-			div {
-				
-			}
 		}
 	}
 }
@@ -1001,8 +950,7 @@ body {
 .meet-our-team_item2 {
 	margin: 0 0px;
 }
-.meet-our-team_item3 {
-}
+
 
 .meet-our-team_txt__block.cards-text__block {
 	margin-top: 30px;
@@ -1014,8 +962,7 @@ body {
 
 /* ____BRANDS-BLOCK_______________________________________________________________________________________________________________________________________ */
 
-.brands__body {
-}
+
 
 .brands__block {
 	background-color: #f8f8f8;
@@ -1030,12 +977,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
-.brands_img__block {
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
-	// vertical-align: center;
 }
 
 .brands-img__item {
