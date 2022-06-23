@@ -784,7 +784,6 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 		h3 {
-			color: #333;
 			padding: 20px;
 			color: #a6a6a6;
 			font-family: "Roboto", sans-serif;
@@ -801,6 +800,7 @@ body {
 	background: #fff;
 	position: relative;
 	h2 {
+		text-transform: uppercase;
 		display: inline-block;
 		align-items: center;
 		margin: 7.5px 0 7.5px 16px;
@@ -825,7 +825,7 @@ body {
 }
 .main-block__button::after {
 		content: "";
-		background-image: url(../img/);
+		background-image: url(../img/nav/nav-services-arrow.svg);
 		width: 22px;
 		height: 20%;
 		position: absolute;

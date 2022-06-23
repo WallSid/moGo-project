@@ -826,7 +826,6 @@ body {
 }
 
 .main-block__items h3 {
-  color: #333;
   padding: 20px;
   color: #a6a6a6;
   font-family: "Roboto", sans-serif;
@@ -845,6 +844,7 @@ body {
 }
 
 .main-block__button h2 {
+  text-transform: uppercase;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -861,7 +861,7 @@ body {
 
 .main-block__button::after {
   content: "";
-  background-image: url(../img/);
+  background-image: url(../img/nav/nav-services-arrow.svg);
   width: 22px;
   height: 20%;
   position: absolute;
