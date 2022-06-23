@@ -719,7 +719,6 @@ body {
   margin: 0 0 0 25px;
 }
 
-.Services__title {
 .cards-text__block h2 {
   color: #333;
   font-family: "Roboto", sans-serif;
@@ -728,7 +727,6 @@ body {
   margin: 0 0 15px 0;
 }
 
-.Services__text {
 .cards-text__block p {
   color: #9f9f9f;
   font-size: 14px;
@@ -772,35 +770,17 @@ body {
   z-index: 20;
 }
 
-<<<<<<< Updated upstream
 @media (max-width: 767px) {
   .images-item2 {
     display: none;
-=======
+  }
+}
+
 /* ____What-we-do_______________________________________________________________________________________________________________________________________ */
 .page__What-we-do {
   margin-bottom: 120px;
 }
 
-@media (min-width: 1160px) {
-  .What-we-do__main-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .What-we-do__main-block_items {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
-    margin-left: 5px;
->>>>>>> Stashed changes
-  }
-}
-
-/* ____What-we-do_______________________________________________________________________________________________________________________________________ */
 .main-block_img {
   margin: 0 10px 0 0;
 }
