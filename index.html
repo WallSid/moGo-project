@@ -18,25 +18,48 @@
             <div class="header__container _container">
                 <a href="" class="header__logo">MoGo
                 </a>
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="" class="menu__link">About</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Service</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Work</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Blog</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a data-goto=".page__aboutUs" href="#" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto=".page__Services" href="#" class="menu__link">Service</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto=".page__our-works" href="#" class="menu__link">Work</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto=".page-our-stories" href="#" class="menu__link">Blog</a>
+                            </li>
+                            <li class="menu__item">
+                                <a data-goto=".footer" href="#" class="menu__link">Contact</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Страница №1</a>
+                                <span class="menu__arrow"></span>
+                                <ul class="menu__sub-list">
+                                    <li>
+                                        <a href="#" class="menu__sub-link">Раздел страницы №1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__sub-link">Раздел страницы №2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__sub-link">Раздел страницы №3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menu__link">Страница №2</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="page">
@@ -79,7 +102,7 @@
                     <div class="aboutUs__img">
                         <div class="aboutUs__img-block">
                             <div class="aboutUs__img-items">
-                                <img class="img-item" src="img/1st_picture_aboutUs.png" alt="img1">
+                                <img class="aboutUs-img-item" src="img/1st_picture_aboutUs.png" alt="img1">
                                 <div class="img-title">
                                     <div class="title-icon">
                                         <img class="title-icon-item" src="/img/USERS.png" alt="users">
@@ -90,7 +113,7 @@
                         </div>
                         <div class="aboutUs__img-block">
                             <div class="aboutUs__img-items">
-                                <img class="img-item" src="img/aboutUs2nd.jpg" alt="img2">
+                                <img class="aboutUs-img-item" src="img/aboutUs2nd.jpg" alt="img2">
                                 <div class="img-title">
                                     <div class="title-icon">
                                         <img class="title-icon-item" src="/img/USERS.png" alt="users">
@@ -101,7 +124,7 @@
                         </div>
                         <div class="aboutUs__img-block">
                             <div class="aboutUs__img-items">
-                                <img class="img-item" src="img/aboutUs3d.jpg" alt="img3">
+                                <img class="aboutUs-img-item" src="img/aboutUs3d.jpg" alt="img3">
                                 <div class="img-title">
                                     <div class="title-icon">
                                         <img class="title-icon-item" src="/img/USERS.png" alt="users">
@@ -113,44 +136,54 @@
                     </div>
 
                 </div>
-                <div class="bg__aboutUs">
-                    <div class="aboutUs__container _container">
-                        <div class="aboutUs__body">
-                            <div class="aboutUs__column">
-                                <div class="aboutUs__item item-aboutUs">
-                                    <div class="aboutUs__text"><p class="aboutUs__value">42</p> Web design project
-                                    </div>
+            </section>
+            <section class="counts_block">
+                <div class="counts_container _container">
+                    <div class="aboutUs_counts__block">
+                        <div class="aboutUs__column">
+                            <div class="aboutUs__item item-aboutUs">
+                                <div class="aboutUs__text">
+                                    <p class="aboutUs__value">42</p>
+                                    <p class="counts-name">Web design project</p class="counts-name">
                                 </div>
                             </div>
-                            <div class="aboutUs__column">
-                                <div class="aboutUs__item item-aboutUs">
-                                    <div class="aboutUs__text"><p class="aboutUs__value">133</p>Happy client
-                                    </div>
+                        </div>
+                        <div class="aboutUs__column">
+                            <div class="aboutUs__item item-aboutUs">
+                                <div class="aboutUs__text">
+                                    <p class="aboutUs__value">133</p>
+                                    <p class="counts-name">Happy client</p>
                                 </div>
                             </div>
-                            <div class="aboutUs__column">
-                                <div class="aboutUs__item item-aboutUs">
-                                    <div class="aboutUs__text"><p class="aboutUs__value">15</p>Award winner
-                                    </div>
+                        </div>
+                        <div class="aboutUs__column">
+                            <div class="aboutUs__item item-aboutUs">
+                                <div class="aboutUs__text">
+                                    <p class="aboutUs__value">15</p>
+                                    <p class="counts-name">Award winner</p>
                                 </div>
                             </div>
-                            <div class="aboutUs__column">
-                                <div class="aboutUs__item item-aboutUs">
-                                    <div class="aboutUs__text"><p class="aboutUs__value">99</p>Cup of coffee
-                                    </div>
+                        </div>
+                        <div class="aboutUs__column">
+                            <div class="aboutUs__item item-aboutUs">
+                                <div class="aboutUs__text">
+                                    <p class="aboutUs__value">99</p>
+                                    <p class="counts-name">Cup of coffee</p>
                                 </div>
                             </div>
-                            <div class="aboutUs__column">
-                                <div class="aboutUs__item item-aboutUs">
-                                    <div class="aboutUs__text"><p class="aboutUs__value">24</p>Members
-                                    </div>
-                                </div> 
-                            </div>
+                        </div>
+                        <div class="aboutUs__column">
+                            <div class="aboutUs__item item-aboutUs">
+                                <div class="aboutUs__text">
+                                    <p class="aboutUs__value">24</p>
+                                    <p class="counts-name">Members</p>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
-                
             </section>
+            
             <section class="page__Services Services">
                 <div class="Services__container _container">
                     <div class="Services__header header-block">
@@ -242,18 +275,21 @@
                     <div class="images-item1-block">
                         <img class="images-item1" src="/img/display_bg_tablet1.png" alt="display_bg_tablet">
                         <img class="images-item2" src="/img/bgIphone1.png" alt="bgIphone">  
-                    </div> -->
-                    <!-- <div class="Unique-Design__images">
+                    </div>
+                    <div class="Unique-Design__images">
                         <div class="Unique-Design__images_items">
                             <div class="relative-block">
-                                <div class="images-item1-block"><img class="images-item1" src="/img/display_bg_tablet1.png" alt="display_bg_tablet"></div>
+                                <div class="images-item1-block">
+                                    <img class="images-item1" src="/img/display_bg_tablet1.png"     alt="display_bg_tablet">
+                                </div>
                                 <div>
                                     <img class="images-item2" src="/img/bgIphone1.png" alt="bgIphone">   
                                 </div>
                             </div>
                         </div>  
-                    </div> -->
-                <!-- </div>
+                    </div>
+
+                </div>
             </section> -->
             <section class="page__What-we-do">
                 <div class="What-we-do__container _container">
@@ -730,14 +766,16 @@
                             <span class="followers-num">15K</span> followers
                         </div>
                         <div class="follow-us__block">
-                            Follow us: 
-                            <a href="#" target="_blank"><span class="_icon-facebook"></span></a>
-                            <a href="#" target="_blank"><span class="_icon-twitter"></span></a>
-                            <a href="#" target="_blank"><span class="_icon-instagram"></span></a>
-                            <a href="#" target="_blank"><span class="_icon-google-plus"></span></a>
-                            <a href="#" target="_blank"><span class="_icon-youtube"></span></a>
-                            <a href="#" target="_blank"><span class="_icon-dribbble"></span></a>
-                            <a href="#" target="_blank"><span class="_icon-tumblr"></span></a>
+                            <div class="follow-us__items">
+                                <span class="follow-us__title">Follow us: </span>
+                                <a href="#" target="_blank"><div class="_icon _icon-facebook"></div></a>
+                                <a href="#" target="_blank"><div class="_icon _icon-twitter"></div></a>
+                                <a href="#" target="_blank"><div class="_icon _icon-instagram"></div></a>
+                                <a href="#" target="_blank"><div class="_icon _icon-google-plus"></div></a>
+                                <a href="#" target="_blank"><div class="_icon _icon-youtube"></div></a>
+                                <a href="#" target="_blank"><div class="_icon _icon-dribbble"></div></a>
+                                <a href="#" target="_blank"><div class="_icon _icon-tumblr"></div></a>
+                            </div>
                         </div>
                         <div class="subscribe-block-item">
                             <form>
